@@ -57,6 +57,10 @@ header .container img {
     height: 140px;
 }
 
+#checkbox-menu {
+    display: none;
+}
+
 /* Main - Conteúdo */
 
 main {
