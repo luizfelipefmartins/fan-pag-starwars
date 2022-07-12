@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn-icons.flaticon.com/png/512/2363/premium/2363876.png?token=exp=1656444925~hmac=88e6971fde5521410b8d5dd96f2dfcb2" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="./image/1_21_190402092021_adesivo-de-parede-logo-star-wars.png" alt="logo" />
+            <div class="menu-section">
+                <div class="container-menu">
+                    <input type="checkbox" id="checkbox-menu" />
+                    <label class="menu-button-container" for="checkbox-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Artigos</a>
+                            </li>
+                            <li>
+                                <a href="#">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-main">
+            <div>
+                <h2><span>Inscreva-se agora</span></h2>
+                <h2>na Newslatter</h2>
+                <h3>
+                    Que a força esteja com vocês
+                </h3>
+                <form>
+                    <input type="text" placeholder="home" />
+                    <input type="email" placeholder="E-mail" />
+                    <input type="submit" value="Enviar" />
+                </form>
+            </div>
+            <img src="./image/mandalorian-s2-removebg-preview.jpg" alt="" />
+        </div>
+    </main>
+    <section class="cards">
+        <div class="card">
+            <div class="image">
+                <img src="./image/Star-Wars-A-Ascenção-Skywalker-1024x576.jpg" />
+            </div>
+            <div class="content">
+                <p class="title-text-medium">
+                    Historias e novidades sobre o mundo de Star Wars
+                </p>
+                <div class="info">
+                    <p class="text-medium">57 Min</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="./image/Star-Wars-A-Ascenção-Skywalker-1024x576.jpg" />
+            </div>
+            <div class="content">
+                <p class="title-text-medium">
+                    Historias e novidades sobre o mundo de Star Wars
+                </p>
+                <div class="info">
+                    <p class="text-medium">57 Min</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="./image/Star-Wars-A-Ascenção-Skywalker-1024x576.jpg" />
+            </div>
+            <div class="content">
+                <p class="title-text-medium">
+                    Historias e novidades sobre o mundo de Star Wars
+                </p>
+                <div class="info">
+                    <p class="text-medium">57 Min</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="./image/Star-Wars-A-Ascenção-Skywalker-1024x576.jpg" />
+            </div>
+            <div class="content">
+                <p class="title-text-medium">
+                    Historias e novidades sobre o mundo de Star Wars
+                </p>
+                <div class="info">
+                    <p class="text-medium">57 Min</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="form">
+        <div class="ContatoFinal">
+            <h1 class="chamadaContato">Entre em contato conosco!!</h1>
+            <p> Os campos anotados com <span class="obrigatorio">*</span> são obrigatórios</p>
+            <form action="pagina-processa-dados-do-form" method="post">
+                <div>
+                    <label class="NomeContato" for="name">Nome:</label>
+                    <input type="text" id="name" placeholder="Nome completo" />
+                </div>
+
+                <div>
+                    <label for="mail" class="obrigatorio">E-mail*:</label>
+                    <input type="email" id="mail" placeholder="email@mail.com" />
+                </div>
+
+                <div>
+                    <label for="assunto">Assunto:</label>
+
+                    <select name="assunto" id="assunto">
+                        <option value="N" selected></option>
+                        <option value="S">Sugestão</option>
+                        <option value="R">Reclamação</option>
+                        <option value="E">Elogio</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="msg" class="obrigatorio">Mensagem*:</label>
+                    <textarea id="msg"></textarea>
+                    <p>Tamanho máximo de 100 caracteres</p>
+                </div>
+                <div class="button">
+                    <button type="submit">Enviar sua mensagem</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
