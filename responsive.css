@@ -2,6 +2,7 @@
     main .container-main div {
         margin: auto;
     }
+
     main .container-main img {
         display: none;
     }
@@ -9,7 +10,7 @@
     h2 {
         margin-left: 50px;
     }
-    
+
     div h3 {
         margin-left: 50px;
     }
@@ -35,24 +36,36 @@
 }
 
 @media (max-width: 630px) {
-    nav {
-        display: none;
+
+    .menu-button-container {
+        display: flex;
     }
 
     main .container-menu img {
         display: none;
     }
 
-    .container-menu {
-        height: 100%;
-        display: flex;
-        align-items: center;
+    .menu {
+        position: absolute;
+        margin-top: 30px;
+        flex-direction: column;
+        width: 100vw;
         justify-content: center;
+        align-items: center;
+        left: 100%;
+        transform: translateX(100vw);
+        transition: 0.5s ease transform;
     }
 
-    #checkbox-menu {
-        position: absolute;
-        opacity: 0;
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        color: black;
+        background-color: rgb(233, 187, 49);
+        border-radius: 5px;
     }
 
     label {
@@ -61,6 +74,15 @@
         display: block;
         height: 22px;
         width: 30px;
+    }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid black;
+    }
+
+    .menu li a {
+        flex: 1;
+        text-align: center;
     }
 
     label span {
@@ -85,17 +107,26 @@
         top: 16px;
     }
 
-    #checkbox-menu:checked + label span:nth-child(1) {
+    #checkbox-menu:checked+label span:nth-child(1) {
         transform: rotate(-45deg);
         top: 8px;
     }
 
-    #checkbox-menu:checked + label span:nth-child(2) {
+    #checkbox-menu:checked+label span:nth-child(2) {
         opacity: 0;
     }
 
-    #checkbox-menu:checked + label span:nth-child(3) {
+    #checkbox-menu:checked+label span:nth-child(3) {
         transform: rotate(45deg);
         top: 8px;
+    }
+
+    nav.menu {
+        width: 100%;
+    }
+
+    #checkbox-menu:checked~nav .menu {
+        transform: translateX(-100vw);
+        transition: 0.5s ease transform;
     }
 }
