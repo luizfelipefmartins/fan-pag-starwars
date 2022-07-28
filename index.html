@@ -108,39 +108,26 @@
             </div>
         </a>
     </section>
+
     <section id="form">
-        <div class="ContatoFinal">
-            <h1 class="chamadaContato">Entre em contato conosco!!</h1>
-            <p> Os campos anotados com <span class="obrigatorio">*</span> são obrigatórios</p>
-            <form action="pagina-processa-dados-do-form" method="post">
-                <div>
-                    <label class="NomeContato" for="name">Nome:</label>
-                    <input type="text" id="name" placeholder="Nome completo" />
-                </div>
-
-                <div>
-                    <label for="mail" class="obrigatorio">E-mail*:</label>
-                    <input type="email" id="mail" placeholder="email@mail.com" />
-                </div>
-
-                <div>
-                    <label for="assunto">Assunto:</label>
-
-                    <select name="assunto" id="assunto">
-                        <option value="N" selected></option>
-                        <option value="S">Sugestão</option>
-                        <option value="R">Reclamação</option>
-                        <option value="E">Elogio</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="msg" class="obrigatorio">Mensagem*:</label>
-                    <textarea id="msg"></textarea>
-                    <p>Tamanho máximo de 100 caracteres</p>
-                </div>
-                <div class="button">
-                    <button type="submit">Enviar sua mensagem</button>
-                </div>
+        <div class="container-form">
+            <form id="contact" action="" method="post">
+                <h3>Entre em contato conosco</h3>
+                <fieldset>
+                    <input placeholder="Seu nome" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Seu email" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Seu telefone (opicional)" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Digite sua mensagem...." type="email" tabindex="4" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Cadastrar</button>
+                </fieldset>
             </form>
         </div>
     </section>
